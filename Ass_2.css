@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding:20px;
+
+}
+#main{
+         
+     height: 95vh;
+     animation: bgmovement;
+     animation-fill-mode: backwards;
+     animation-duration: 2s;
+     clip-path: ellipse( 149vh 59vh at 50% 36% );
+     background:linear-gradient(#fbd3e980 , #bb377d86 ), url(Strawberry-and-Cake-PPT-Backgrounds-Template-ppt-background-images-hd.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+      
+     
+     
+}     
+
+  
+#content{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#head{
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: movedown;
+  animation-duration: 1s;
+  margin-bottom:0%;
+}
+#sub{
+  margin-top:0%;
+  color: white;
+  animation: moveup;
+  animation-duration: 1s;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.5px;
+  
+}
+
+#main button{
+  width: 180px;
+  padding: 12px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #444;
+  background: rgb(255, 255, 255);
+  box-shadow:0 7px 8px rgba(0, 0, 0, 0.589);
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  
+}
+
+#main button:hover{
+   background-color: rgb(128, 19, 150);
+   color: white;
+}
+
+#main button:active {
+  background-color: rgb(128, 19, 150);
+  box-shadow:0 3px 8px rgba(0, 0, 0, 0.589);
+  transform: translateY(4px);
+}
+
+@keyframes bgmovement{
+  0%{
+    background: linear-gradient( #ffc2e3,  #ffa9d8 50% 50% ) ;
+    background-position: center;
+  }
+
+  100%{
+    background:linear-gradient(#fbd3e980 , #bb377d86 ), url(Strawberry-and-Cake-PPT-Backgrounds-Template-ppt-background-images-hd.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+      
+  }
+}
+
+@keyframes movedown{
+  0% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(20px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+  @keyframes moveup{
+    0% {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+    50%{
+      transform: translateY(-10px);
+      opacity: .5;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveright{
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  
